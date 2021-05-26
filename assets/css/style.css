@@ -1,0 +1,111 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
+}
+
+#container {
+    display: block;
+    text-align: center;
+    height: auto;
+}
+
+#logo {
+    background: rgb(121, 9, 9);
+    background: linear-gradient(180deg, rgba(121, 9, 9, 0.9615196420365021) 85%, rgba(255, 255, 255, 1) 100%);
+    background-repeat: no-repeat;
+    height: 450px;
+}
+
+#logo h1 {
+    font-weight: bold;
+    font-size: 40px;
+    color: white;
+}
+
+#logo img {
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+}
+
+#requestOrder form {
+    width: 350px;
+    display: inline-block;
+    text-align: left;
+}
+
+#tbl_personal_form input {
+    height: 20px;
+    width: 250px;
+    min-width: 30px;
+    margin: 4px auto;
+}
+
+.aling_text {
+    text-align: right;
+    padding-right: 5px;
+}
+
+#separate_line {
+    margin-top: 20px;
+    height: 5px;
+    background-color: rgb(121, 9, 9);
+}
+
+#tbl_order_form select {
+    width: 180px;
+    height: 20px;
+    margin-top: 10px;
+}
+
+.form-group {
+    width: 200px;
+    height: auto;
+    margin-top: 15px;
+    text-align: left;
+}
+
+.form-group input {
+    height: 30px;
+    width: 100%;
+    border: 1px solid rgb(121, 9, 9);
+}
+
+.form-group select {
+    height: 30px;
+    width: 100%;
+    border: 1px solid rgb(121, 9, 9);
+}
+
+.form-group input:focus {
+    outline: none !important;
+    border: 2px dashed gray;
+    box-shadow: 0 0 3px rgb(121, 9, 9);
+    color: white;
+    background-color: rgb(121, 9, 9);
+}
+
+.form-group textarea:focus {
+    outline: none !important;
+    border: 2px dashed gray;
+    box-shadow: 0 0 3px rgb(121, 9, 9);
+    color: white;
+    background-color: rgb(121, 9, 9);
+}
+
+#radiogroup p {
+    height: 10px;
+    width: 10px;
+}
+
+#btn-order {
+    width: 250px;
+    height: 30px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    background-color:  rgb(121, 9, 9);
+}

@@ -1,0 +1,93 @@
+*{
+    padding: 0px;
+    margin:0px;
+    font-family:"Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
+}
+#container {
+    display: block;
+    text-align: center;
+    height: auto;
+}
+
+#logo {
+    background: rgb(121, 9, 9);
+    background: linear-gradient(180deg, rgba(121, 9, 9, 0.9615196420365021) 85%, rgba(255, 255, 255, 1) 100%);
+    background-repeat: no-repeat;
+    height: 450px;
+}
+#logo h1 {
+    font-weight: bold;
+    font-size: 40px;
+    color: white;
+}
+
+#logo img {
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+}
+
+#orderDetailTitle{
+    display: block;
+    text-align: center;
+    
+}
+
+#orderDetailTitle button{
+    width: 250px;
+    height: 30px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    background-color:  rgb(121, 9, 9);
+}
+
+#orderDetails{
+    width: 600px;
+    border: 2px solid  rgb(121, 9, 9);
+     background: white;
+    color: black;
+    display: flex;
+    align-items: flex-start;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    margin-top: 20px;
+
+}
+.personalInformation{
+    width: 300px;
+    float: left;
+}
+
+.personalInformation ul li{
+   list-style: none;
+   margin-bottom: 10px;
+}
+.personalInformation ul li p{
+    font-weight: bold;
+}
+
+.personalInformation ul li p span{
+    font-weight: normal;
+}
+
+.pizzaDetails{
+   
+   width: 300px;
+   float: left;
+}
+.pizzaDetails ul li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.pizzaDetails ul li p{
+    font-weight: bold;
+}
+
+.pizzaDetails ul li p span{
+    font-weight: normal;
+}

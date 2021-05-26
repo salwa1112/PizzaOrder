@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Home || The Better place to order pizza</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/validate-form.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <div id="logo">
+            <h1>Pizza Home</h1>
+            <img src="assets/images/pizza_logo.png" />
+
+            <br />
+            <br />
+            <h1>Form to orden</h1>
+        </div>
+
+        <div id="requestOrder">
+            <h1>Personal Information</h1>
+
+            <form action="process_order.php" name="formOrder" method="POST" onsubmit="return processOrden(this)">
+                <div class="form-group">
+                    <label for="full_name">Full Name</label>
+                    <input id="full_name" name="full_name" type="text" placeholder="Full Name" />
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email"  placeholder="Email" />
+                </div>
+
+
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input id="phone" name="phone" type="tel"  placeholder="Phone" />
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <textarea id="address" name="address" cols="32" rows="10" 
+                        placeholder="Address  to delivery"></textarea>
+
+                </div>
+
+                <hr id="separate_line" />
+                <h1>Select your ordening</h1>
+                <br />
+                <br />
+
+                <div id="radiogroup">
+                    <label>Size</label>
+
+                    <span>
+                        <input id="small" type="radio" name="pizza_size" value="Small" checked />
+                        <label for="small">Small</label>
+                    </span>
+                    <span>
+                        <input id="medium" type="radio" name="pizza_size" value="Medium" />
+                        <label for="medium">Medium</label>
+                    </span>
+                    <span>
+                        <input id="large" type="radio" name="pizza_size" value="Large" />
+                        <label for="large">Large</label>
+                    </span>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="pizza_type">Type</label>
+                    <select id="pizza_type" name="pizza_type" >
+                        <option value="">- Select -</option>
+                        <option title="Pepperoni" value="Pepperoni">Pepperoni</option>
+                        <option title="Hawaiian" value="Hawaiian">Hawaiian</option>
+                        <option title="Cheese" value="Cheese">Cheese</option>
+                        <option title="Meat Lovers" value="MeatLovers">Meat Lovers</option>
+                        <option title="Vegetarian" value="Vegetarian">Vegetarian</option>
+                    </select>
+                </div>
+                <button id="btn-order" type="submit" >Process Order</button>
+            </form>
+        </div>
+    </div>
+ 
+</body>
+
+</html>
